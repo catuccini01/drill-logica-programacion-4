@@ -4,13 +4,35 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Título de la página</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Fibonacci</title>
   </head>
   <body>
     <header></header>
     <main>
-      <!--Contenido main-->
+      <section id="section">
+        <div class="formulario">
+          <label>Ingrese su número :D</label>
+          <input type="text" id="fibonacci" placeholder="Escriba aquí" />
+        </div>
+
+        <button onclick="button()">Comenzar</button>
+        <hr>
+        <div class="mostrarResultado">
+          <h2>Aquí se mostrará tu resultado</h2>
+          <div class="cajaResultado">
+            <p id="resultado"></p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
